@@ -5,7 +5,6 @@ fileURL <- 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%2
 dirFile <- "./UCI HAR Dataset"
 
 #Directory and filename (txt or csv) of the clean/tidy data:
-tidyDataFile <- "./Tidy_Data_Set.txt"
 tidyDataFileAVGtxt <- "./AVE_Tidy_Data_Set.txt"
 
 if(!file.exists(dirFile)) {
