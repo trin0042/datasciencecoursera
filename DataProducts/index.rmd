@@ -30,9 +30,19 @@ The purpose of this project is to create a random number generator and see how r
 
 --- .class #id 
 
-## Histroram
+## Histogram
 
 A histogram is provides a nice graphical representation of the distribution of the data.
+
+```{r warning=FALSE}
+   dist <- rnorm(input$obs)
+    
+    par(mfrow=c(2,1))
+    hist(dist)
+    plot(dist)
+```
+
+ 
 ---
 
 ## Scatter Plot

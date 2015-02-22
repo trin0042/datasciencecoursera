@@ -78,10 +78,31 @@
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Histroram</h2>
+    <h2>Histogram</h2>
   </hgroup>
   <article data-timings="">
-    <h2>A histogram is provides a nice graphical representation of the distribution of the data.</h2>
+    <p>A histogram is provides a nice graphical representation of the distribution of the data.</p>
+
+<pre><code class="r">   dist &lt;- rnorm(input$obs)
+</code></pre>
+
+<pre><code>## Error in rnorm(input$obs): object &#39;input&#39; not found
+</code></pre>
+
+<pre><code class="r">    par(mfrow=c(2,1))
+    hist(dist)
+</code></pre>
+
+<pre><code>## Error in hist.default(dist): &#39;x&#39; must be numeric
+</code></pre>
+
+<pre><code class="r">    plot(dist)
+</code></pre>
+
+<pre><code>## Error in curve(expr = x, from = from, to = to, xlim = xlim, ylab = ylab, : &#39;expr&#39; did not evaluate to an object of length &#39;n&#39;
+</code></pre>
+
+<hr>
 
 <h2>Scatter Plot</h2>
 
@@ -122,7 +143,7 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Histroram'>
+        data-slide=4 title='Histogram'>
          4
       </a>
     </li>

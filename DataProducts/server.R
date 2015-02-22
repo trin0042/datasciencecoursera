@@ -17,7 +17,6 @@ shinyServer(function(input, output) {
     
     par(mfrow=c(2,1))
     hist(dist)
- #   boxplot(dist)
     plot(dist)
     
   })
